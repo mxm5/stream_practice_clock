@@ -39,17 +39,17 @@ class MyHomePage extends StatelessWidget {
                       fontWeight: FontWeight.w900),
                 ),
               ),
-              Center(
-                child: CircularPercentIndicator(
-                  radius: 300,
-                  lineWidth: 7,
-                  percent: snapshot.data ?? 0,
-                  backgroundColor: Colors.transparent,
-                  addAutomaticKeepAlive: true,
-                  animateFromLastPercent: true,
-                  progressColor: Colors.amber,
-                ),
-              ),
+              // Center(
+              //   child: CircularPercentIndicator(
+              //     radius: 300,
+              //     lineWidth: 7,
+              //     percent: snapshot.data ?? 0,
+              //     backgroundColor: Colors.transparent,
+              //     addAutomaticKeepAlive: true,
+              //     animateFromLastPercent: true,
+              //     progressColor: Colors.amber,
+              //   ),
+              // ),
               Center(
                 child: CircularPercentIndicator(
                   radius: 270,
@@ -59,6 +59,19 @@ class MyHomePage extends StatelessWidget {
                   addAutomaticKeepAlive: true,
                   animateFromLastPercent: true,
                   progressColor: Colors.yellow,
+                  // startAngle: 180,
+                  circularStrokeCap: CircularStrokeCap.round,
+                ),
+              ),
+              Center(
+                child: CircularPercentIndicator(
+                  radius: 285,
+                  lineWidth: 7,
+                  percent: 1,
+                  // backgroundColor: Colors.greenAccent,
+                  addAutomaticKeepAlive: true,
+                  animateFromLastPercent: true,
+                  progressColor: Colors.greenAccent,
                   // startAngle: 180,
                   circularStrokeCap: CircularStrokeCap.round,
                 ),
